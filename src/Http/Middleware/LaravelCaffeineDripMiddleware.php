@@ -29,7 +29,7 @@ class LaravelCaffeineDripMiddleware
         }
 
         $formTokenRegexp = $this->makeRegex([
-            '<input([^>]*?[\n]?)*[^>]*?name\s*=\s*[\'"]_token[\'"]',
+            '<input\s+name="_token',
         ]);
         $metaTokenRegexp = $this->makeRegex([
             '<meta\s+',
